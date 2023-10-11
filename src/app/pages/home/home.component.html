@@ -7,11 +7,21 @@
 
 <div class="container__articles">
   <div class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
+      [cardTitle]="'Sample Title'"
+      [cardDescription]="'Quisque sodales urna tortor, vitae posuere velit pulvinar eget. Ut condimentum quam ac enim varius, sed viverra tortor consectetur. Proin sapien metus, volutpat id dictum id, aliquam a sem.'">
+    </app-big-card>
   </div>
   <div class="articles__other">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
+      [cardTitle]="'Sample Text'"></app-small-card>
+    <app-small-card
+      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
+      [cardTitle]="'Sample Text'"></app-small-card>
+    <app-small-card
+      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
+      [cardTitle]="'Sample Text'"></app-small-card>
   </div>
 </div>
