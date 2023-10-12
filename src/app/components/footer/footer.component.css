@@ -1,0 +1,21 @@
+
+.container__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.container__footer, .container__copyright, .container__credits > a {
+  background-color: rgb(39, 39, 39);
+}
+
+.container__copyright {
+  margin-right: 10px;
+}
+
+.container__credits {
+  display: flex;
+  flex-direction: column;
+}

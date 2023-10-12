@@ -1,27 +1,21 @@
 
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-
 <app-menu-title></app-menu-title>
 
 <div class="container__articles">
   <div class="articles__main">
     <app-big-card
-      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
-      [cardTitle]="'Sample Title'"
-      [cardDescription]="'Quisque sodales urna tortor, vitae posuere velit pulvinar eget. Ut condimentum quam ac enim varius, sed viverra tortor consectetur. Proin sapien metus, volutpat id dictum id, aliquam a sem.'">
+      Id="{{mainNews.id}}"
+      [cardImg]="mainNews.photo"
+      [cardTitle]="mainNews.title"
+      [cardDescription]="mainNews.description">
     </app-big-card>
   </div>
-  <div class="articles__other">
-    <app-small-card
-      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
-      [cardTitle]="'Sample Text'"></app-small-card>
-    <app-small-card
-      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
-      [cardTitle]="'Sample Text'"></app-small-card>
-    <app-small-card
-      [cardImg]="'../../../assets/imgs/placeholder.jpg'"
-      [cardTitle]="'Sample Text'"></app-small-card>
+
+  <div >
+    <app-small-card class="articles__other" *ngFor="let data of dataArray"
+    Id="{{data.id}}"
+    [cardImg]="data.photo"
+    [cardTitle]="data.title">
+    </app-small-card>
   </div>
 </div>

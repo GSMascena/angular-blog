@@ -3,6 +3,7 @@
   width: 500px;
   margin-bottom: 15px;
   text-decoration: none;
+  color: #fff;
 }
 
 .container__small-card-content {
@@ -27,4 +28,10 @@
 
 .small-card__separator {
   margin-top: 10px;
+  color: #fff;
+}
+
+.small-card__separator > hr {
+  margin-top: 10px;
+  color: #fff;
 }
